@@ -68,42 +68,9 @@ public class Main {
                 "You crawl into the spaceship with "+ companionName + "and  brace for take off!");
         System.out.printf("5...%n4...%n3..%n..2%n..1%n* Lift Off! *");
     }
+
 }
 
 
 
 
-//       // int number = rand.nextInt(100) + 1;
-//        //System.out.println("number is " + number);
-//
-//        int trycount = 0;
-//        while (true) {
-//            System.out.println("Enter your guess(1-100):");
-//
-//            //int playerGuess = scanner.nextInt();
-//
-//
-//            int playerGuess = 0;
-//            try {
-//                playerGuess = scanner.nextInt();
-//            } catch (Exception e) {
-//                //input.nextLine();
-//                System.out.println("That's not an integer, enter " + number);
-//                continue;
-//            }
-//            trycount++;
-//
-//            if (playerGuess == number) {
-//                System.out.println("Correct! you win!");
-//                System.out.println("You had " + trycount + "tries!");
-//                break;
-//            } else if (number > playerGuess) {
-//                System.out.println("Nope, the number is higher. guess again!");
-//            } else {
-//                System.out.println("Nope, the number is lower. guess again!");
-//            }
-//        }
-//
-//        scanner.close();
-//    }
-//}
