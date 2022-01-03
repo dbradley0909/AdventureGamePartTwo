@@ -1,13 +1,12 @@
 package com.pluralsight.organized;
-
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        Random rand = new Random();
+
         Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
 
         System.out.println("The game is about to start...");
@@ -17,9 +16,7 @@ public class Main {
         String name = input.nextLine();  // Get user input
         System.out.println("Hi, " + name + " Welcome to The Creepy Mars Adventure Game!");
         System.out.printf("Are you excited to play?%n(Answer: Y for yes or N for no)%n");
-        input.nextLine();
-        String answer = "Y";
-
+        String answer = sc.nextLine();
         if (answer == "Y") {
             System.out.println("> Awe, great to hear! It's so cool that you're going to the haunted part of Mars!!");
 
@@ -28,8 +25,8 @@ public class Main {
         }
 
         System.out.println("Are you bringing suitcases and if so how many?");
-        input.nextLine();
-        int suitcases = 4;
+        String s = sc.nextLine();
+        int suitcases = Integer.parseInt(s);
         if (suitcases > 2) {
             System.out.println("That's to many, we have a limit of two or less!");
         } else if (suitcases == 2) {
@@ -53,8 +50,8 @@ public class Main {
                 " A  Sleek and modern%n" +
                 " B  Retro/vintage space age%n" +
                 " C  Minimalism%n");
-             input.nextLine();
-        String interior = "A";
+        String interior = sc.nextLine();
+
         if (interior == "A") {
             System.out.println(">  Sleek and modern, nice choice!");
         } else if (interior == "B") {
@@ -63,10 +60,10 @@ public class Main {
             System.out.println(">Minimalism, lot's of space is always great!");
         }
         System.out.printf("I can see it now:%n " +
-                name + " and "+ companionName +"surfing the celestial abyss ... %n" +
-                "in aspaceship.%n" +
-                "You crawl into the spaceship with "+ companionName + "and  brace for take off!");
-        System.out.printf("5...%n4...%n3..%n..2%n..1%n* Lift Off! *");
+                name + " and "+ companionName + " surfing the celestial abyss ... %n" +
+                "in a spaceship.%n" +
+                "You crawl into the spaceship with "+ companionName + " and  brace for take off!");
+        System.out.printf("5...%n4...%n3..%n2..%n1..%n* Lift Off! *");
     }
 
 }
